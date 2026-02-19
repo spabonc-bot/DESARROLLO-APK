@@ -8,87 +8,86 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: #ffffff;
-    color: #333;
 }
 
-/* CONTENEDOR PRINCIPAL */
-.container {
+/* CONTENEDOR */
+.contenedor {
+    display: flex;
+    min-height: 100vh; 
     width: 100%;
 }
 
-/* CABECERA */
-.cabecera {
-    background-color: #1f3a5f;
+/* IZQUIERDA */
+.izquierda {
+    width: 25%;
+    background-color: #2f4f6f;
     color: #ffffff;
-    padding: 30px;
-    display: flex;
-    align-items: center;
+    padding: 40px 30px;
 }
 
-.contenedor_foto_perfil {
-    width: 140px;
-    height: 140px;
+.foto {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
+    margin: 0 auto 30px auto;
     border: 4px solid #ffffff;
 }
 
-.contenedor_foto_perfil img {
+.foto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.nombre_puesto {
+.izquierda h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.izquierda p {
+    margin-bottom: 8px;
+}
+
+.izquierda ul {
     margin-left: 20px;
 }
 
-.nombre_puesto h1 {
-    font-size: 26px;
+.izquierda li {
+    margin-bottom: 5px;
 }
 
-.nombre_puesto h2 {
-    font-size: 16px;
-    font-weight: normal;
-    opacity: 0.9;
-}
-
-/* CONTENIDO */
-.contenido_cv {
-    display: flex;
-    min-height: 100vh;
-}
-
-.izquierda {
-    width: 30%;
-    background-color: #2f4f6f;
-    color: #ffffff;
-    padding: 20px;
-}
-
+/* DERECHA */
 .derecha {
-    width: 70%;
-    padding: 20px;
+    width: 75%;
+    padding: 50px;
+    background-color: #ffffff;
 }
 
-/* TEXTO */
-h3 {
-    margin-top: 20px;
+.nombre h1 {
+    font-size: 30px;
+}
+
+.nombre h2 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.derecha h3 {
+    margin-top: 25px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
 }
 
-ul {
+.seccion p {
+    margin-bottom: 12px;
+}
+
+.seccion ul {
     margin-left: 20px;
 }
-
-li {
-    margin-bottom: 5px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
